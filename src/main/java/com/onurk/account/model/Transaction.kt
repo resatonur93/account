@@ -11,7 +11,7 @@ data class Transaction(
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy ="org.hibernate.id.UUIDGenerator")
     val id: String?,
-    val transaction: TransactionType? = TransactionType.INITIAL,
+    val transactionType: TransactionType? = TransactionType.INITIAL,
     val amount: BigDecimal?,
     val transactionDate: LocalDateTime?,
 
